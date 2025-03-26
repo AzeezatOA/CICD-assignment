@@ -52,11 +52,11 @@ jobs:
     # Important step - add your environment name
     environment: ENVPROD
     steps:
-        - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
         # Optional: List repository files to verify the docker-compose file exists
-        - name: List repository files
-          run: ls -al
+      - name: List repository files
+        run: ls -al
 
     # Step 7: Build docker image 
     - name: Build Docker Image
